@@ -1,5 +1,5 @@
 
-dotfile, but sway
+dotfile, but sway(fx)
 
 use chezmoi for manager dotfile (https://chezmoi.io/)
 
@@ -28,7 +28,9 @@ other, i inserted original file in some config as "comment"
 fonts
 i use azuki_font (http://azukifont.com/font/azuki.html) in
 gui, alternative is JetbrainsMono, and requirement nerd font
-for display some icon (ex, waybar
-	
+for display some icon (ex, waybar)
 
+last word, if you don't need to use swayfx, or you can use
+only sway (standalone), comment swayfx block in swayconfig
+	
 	beersanp
