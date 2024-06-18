@@ -2,7 +2,7 @@ include $HOME/.config/sway/config.d/*
 
 # run as first openup sway
 exec waybar & mako
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec udiskie &
 exec wal -R
 exec swww query || swww init
@@ -39,4 +39,4 @@ shadows disable
 layer_effects "foot" blur enable; shadows enable;
 corner_radius 4
 gaps outer 4
-gaps inner 8
+gaps inner 4

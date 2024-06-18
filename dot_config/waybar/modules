@@ -256,10 +256,10 @@
     },
     "custom/cloudflarewarp":{
         "format": "{}",
-        "exec": "~/.config/waybar/script/cloudflarewarp.sh",
+        "exec": "$HOME/.config/waybar/script/cloudflarewarp.sh",
         "tooltip": false,
         "interval": 10,
-        "on-click": "~/.config/waybar/script/cloudflarewarptoggle.sh"
+        "on-click": "$HOME/.config/waybar/script/cloudflarewarptoggle.sh"
     }
 
 }
