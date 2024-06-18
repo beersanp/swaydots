@@ -4,7 +4,7 @@ dotfile, but sway(fx)
 use chezmoi for manager dotfile (https://chezmoi.io/)
 
 all keymap use in sway is default key, some shortcut and
-keymap switcher is modified.you need to read in 
+keymap switcher is modified. you need to read in 
 
 `sway/config.d/keymaps`
 
@@ -31,6 +31,7 @@ gui, alternative is JetbrainsMono, and requirement nerd font
 for display some icon (ex, waybar)
 
 last word, if you don't need to use swayfx, or you can use
-only sway (standalone), comment swayfx block in swayconfig
-	
+only sway (standalone), comment swayfx block in swayconfig,
+and need remove `dot_gitconfig` before apply
+
 	beersanp
