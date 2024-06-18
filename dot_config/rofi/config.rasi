@@ -1,0 +1,17 @@
+configuration{
+    modi: "run,drun,window";
+    icon-theme: "Oranchelo";
+    show-icons: true;
+    terminal: "foot";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "apps";
+    display-run: "run";
+    display-window: "window";
+    display-Network: "network";
+    sidebar-mode: true;
+}
+
+@theme "~/.config/rofi/catppuccin-mocha.rasi"

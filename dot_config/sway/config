@@ -1,0 +1,42 @@
+include $HOME/.config/sway/config.d/*
+
+# run as first openup sway
+exec waybar & mako
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec udiskie &
+exec wal -R
+exec swww query || swww init
+exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+
+#share screen (fedora only)
+exec /usr/libexec/xdg-desktop-portal -r & /usr/libexec/xdg-desktop-portal-wlr
+
+exec mpd ~/.config/mpd/mpd.conf
+exec ~/.cargo/bin/mpd-discord-rpc
+exec nm-applet --indicator #pulaeaudio-tray
+exec blueman-applet #bluetooth-tray
+
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+
+# language switch with win+space
+input * {
+    xkb_layout "us,th"
+    xkb_variant ""
+    xkb_options "grp:win_space_toggle"
+}
+
+# main monitor
+focus output HDMI-A-2
+
+# other
+for_window [shell="xwayland"] title_format "[XWayland] %title"
+
+# swayfx
+default_border pixel
+shadows disable
+layer_effects "foot" blur enable; shadows enable;
+corner_radius 4
+gaps outer 4
+gaps inner 8

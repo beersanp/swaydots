@@ -1,0 +1,77 @@
+[
+{
+    "layer": "top",
+    "include": "~/.config/waybar/modules",
+    "width": 1400,
+    "margin-top": 8,
+    "margin-bottom": 0,
+    "ipc": true,
+    "output": "HDMI-A-2",
+    "modules-left": [
+        "mpd",
+        "sway/window"
+    ],
+    "modules-center": ["sway/workspaces#icons"],
+    "modules-right": ["tray",
+        "sway/language",
+        "battery",
+        "pulseaudio",
+        "backlight",
+        "cpu",
+        "memory",
+        "custom/cloudflarewarp",
+        "custom/weather",
+        "clock",
+        "privacy",
+        "gamemode"]
+},
+{
+    "layer": "top",
+    "include": "~/.config/waybar/modules",
+    "output": "DP-1",
+    "ipc": true,
+    "margin-top": 8,
+    "margin-bottom": 0,
+    "width": 1024,
+    "modules-left": [
+        "mpris",
+        "sway/window"
+    ],
+    "modules-center": ["sway/workspaces#icons"],
+    "modules-right": ["tray",
+        "sway/language",
+        "battery",
+        "pulseaudio",
+        "backlight",
+        "cpu",
+        "memory",
+        "custom/weather",
+        "clock",
+        "privacy"]
+},
+{
+    "layer": "top",
+    "width": 1280,
+    "margin-top": 8,
+    "margin-bottom": 0,
+    "ipc": true,
+    "include": "~/.config/waybar/modules",
+    "output": "eDP-1",
+    "modules-left": [
+        "mpris",
+        "sway/window"
+    ],
+    "modules-center": ["sway/workspaces#icons"],
+    "modules-right": ["tray",
+        "sway/language",
+        "battery",
+        "pulseaudio",
+        "backlight",
+        "cpu",
+        "memory",
+        "custom/weather",
+        "clock",
+        "privacy",
+        "gamemode"]
+}
+]

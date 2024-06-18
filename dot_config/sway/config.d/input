@@ -1,0 +1,5 @@
+input type:Mouse {
+    accel_profile "flat"
+    pointer_accel 0.5
+    natural_scroll disabled
+}

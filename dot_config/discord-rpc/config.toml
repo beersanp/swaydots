@@ -1,0 +1,11 @@
+id = 1217414318195478608
+hosts = ["localhost:6600"]
+
+[format]
+details = "$title"
+state = "$artist / $album"
+timestamp = "elapsed"
+large_image = "notes"
+small_image = "notes"
+large_text = ""
+small_text = ""
