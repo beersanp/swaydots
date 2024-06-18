@@ -40,3 +40,6 @@ layer_effects "foot" blur enable; shadows enable;
 corner_radius 4
 gaps outer 4
 gaps inner 4
+
+# pywal16
+include "$HOME/.cache/wal/colors-sway"
