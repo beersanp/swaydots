@@ -5,7 +5,7 @@ exec waybar & mako
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec udiskie &
 exec wal -R
-exec swww query || swww init
+# exec swww query || swww init
 exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
@@ -43,3 +43,6 @@ gaps inner 4
 
 # pywal16
 include "$HOME/.cache/wal/colors-sway"
+# wallpaper after pywal16
+client.focused $color0 $background $foreground $color7 $background
+output * bg $wallpaper fill

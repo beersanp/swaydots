@@ -42,6 +42,7 @@ for_window {
 	[app_id="org.twosheds.iwgtk"] $popup
 	[app_id="iwgtk"] $popup
 	[app_id="imv"] $popup
+	[app_id="Etterna"] $popup
 	[app_id="ksysguard"] $popup
 	[app_id="net.nokyan.Resources"] $popup
 	[app_id="galculator"] $popup

@@ -45,6 +45,9 @@ bindsym $mod+Shift+s exec $HOME/.local/bin/sway-screenshot -m region
     # reload waybar
     bindsym $mod+w exec killall waybar || waybar
 
+    # change wallpaper
+    bindsym $mod+shift+w exec $HOME/.config/sway/script/wall-launcher.sh
+
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'What do you want the computer to do?' -B 'Exit sway' 'swaymsg exit' -B 'Restart' 'systemctl restart' -B 'Shutdown' 'systemctl poweroff'
 #
@@ -110,7 +113,7 @@ bindsym $mod+Shift+s exec $HOME/.local/bin/sway-screenshot -m region
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    bindsym $mod+Mod1+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
