@@ -4,7 +4,7 @@
     "rewrite": {
         "":"🐧 penpentop",
         "(.*) — Mozilla Firefox": "󰖟 browser",
-        "(.*):~": "  terminal",
+        "foot": " terminal",
         "(.*) - Thorium": "󰖟 browser",
         "(.*) - Brave": "󰖟 browser",
         "pacseek": "󰮯 manager",
@@ -36,10 +36,7 @@
         }
     },
     "sway/language": {
-        "format": "{}",
-        "format-en": "as American!",
-        "format-th": "it's Thai!"
-        // "keyboard-name": "at-translated-set-2-keyboard"
+        "format": "{short} {flag}"
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -182,31 +179,29 @@
     	"icon-size": 14,
     	"transition-duration": 250,
     	"modules": [
-    	{
-    		"type": "screenshare",
-    		"tooltip": true,
-    		"tooltip-icon-size": 24
-    	},
-    	{
-    		"type": "audio-out",
-    		"tooltip": true,
-    		"tooltip-icon-size": 24
-    	},
-    	{
-    		"type": "audio-in",
-    		"tooltip": true,
-    		"tooltip-icon-size": 24
-    	}
+    	    {
+    	    	"type": "screenshare",
+    	    	"tooltip": true,
+    	    	"tooltip-icon-size": 24
+    	    },
+    	    {
+    	    	"type": "audio-out",
+    	    	"tooltip": true,
+    	    	"tooltip-icon-size": 24
+    	    },
+    	    {
+    	    	"type": "audio-in",
+    	    	"tooltip": true,
+    	    	"tooltip-icon-size": 24
+    	    }
     	]
-        },
+    },
     "custom/weather": {
-        "format": "{}°",
-        "tooltip": true,
-        "interval": 3600,
-        "exec": "wttrbar",
+        "exec": "${HOME}/.config/waybar/script/get_weather.sh",
         "return-type": "json",
-        "on-click": "foot -T weather -H curl wttr.in",
-        "on-click-middle": "foot -T weather -H curl https://wttr.in/?lang=th"
+        "format": "{}",
+        "tooltip": true,
+        "interval": 600
     },
     "keyboard-state": {
         "numlock": true,

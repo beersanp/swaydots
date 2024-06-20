@@ -2,8 +2,8 @@
 {
     "layer": "top",
     "include": "~/.config/waybar/modules",
-    "width": 1400,
-    "margin-top": 8,
+    "width": 1200,
+    "margin-top": 10,
     "margin-bottom": 0,
     "ipc": true,
     "output": "HDMI-A-2",
@@ -32,7 +32,7 @@
     "ipc": true,
     "margin-top": 8,
     "margin-bottom": 0,
-    "width": 1024,
+    "width": 900,
     "modules-left": [
         "mpris",
         "sway/window"
@@ -51,7 +51,7 @@
 },
 {
     "layer": "top",
-    "width": 1280,
+    "width": 1200,
     "margin-top": 8,
     "margin-bottom": 0,
     "ipc": true,
