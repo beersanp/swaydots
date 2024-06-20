@@ -114,7 +114,8 @@ for_window {
 	[app_id="org.telegram.desktop" title="Telegram"] floating disable; inhibit_idle none
 	[urgent=latest] focus
 	[floating] shadows enable
-	[app_id="alacritty"] saturation set 2; blur enable
+	[app_id="foot"] saturation set 2; blur enable
+	[app_id="kitty"] saturation set 2; blur enable
 	[app_id="firefox" title="Firefox — Sharing Indicator"] floating enable; kill
 	[title="Wine System Tray"] floating enable; kill
 }

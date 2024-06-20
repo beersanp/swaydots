@@ -1,5 +1,10 @@
-input type:Mouse {
-    accel_profile "flat"
-    pointer_accel 0.5
-    natural_scroll disabled
+# mouse
+input type:pointer {
+	events enabled
+	pointer_accel 0
+	accel_profile flat
+	natural_scroll disabled
+	left_handed disabled
+	scroll_factor 1
+	middle_emulation disabled
 }
