@@ -1,7 +1,7 @@
 include $HOME/.config/sway/config.d/*
 
 # run as first openup sway
-exec waybar & mako
+exec mako
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec udiskie &
 exec wal -R
@@ -16,6 +16,7 @@ exec mpd ~/.config/mpd/mpd.conf
 exec ~/.cargo/bin/mpd-discord-rpc
 exec nm-applet --indicator #pulaeaudio-tray
 exec blueman-applet #bluetooth-tray
+exec kdeconnectd & kdeconnect-indicator #kde-connect
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
@@ -27,6 +28,11 @@ input * {
     xkb_options "grp:win_space_toggle"
 }
 
+
+bar {
+  swaybar_command waybar
+}
+
 # main monitor
 focus output HDMI-A-2
 
@@ -36,13 +42,13 @@ for_window [shell="xwayland"] title_format "[XWayland] %title"
 # swayfx
 default_border pixel
 shadows disable
-layer_effects "foot" blur enable; shadows enable;
-corner_radius 4
+corner_radius 8
 gaps outer 4
 gaps inner 4
 
 # pywal16
 include "$HOME/.cache/wal/colors-sway"
+
 # wallpaper after pywal16
 client.focused $color0 $background $foreground $color7 $background
 output * bg $wallpaper fill
