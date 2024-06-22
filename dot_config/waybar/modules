@@ -197,11 +197,12 @@
     	]
     },
     "custom/weather": {
-        "exec": "${HOME}/.config/waybar/script/get_weather.sh",
+        "exec": "$HOME/.local/bin/wttrbar",
         "return-type": "json",
         "format": "{}",
         "tooltip": true,
-        "interval": 600
+        "interval": 600,
+        "on-click": "curl -s wttr.in"
     },
     "keyboard-state": {
         "numlock": true,
