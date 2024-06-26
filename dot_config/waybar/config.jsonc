@@ -19,7 +19,6 @@
         "backlight",
         "cpu",
         "memory",
-        "custom/cloudflarewarp",
         "custom/weather",
         "clock",
         "privacy",

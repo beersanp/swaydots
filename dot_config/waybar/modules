@@ -36,7 +36,8 @@
         }
     },
     "sway/language": {
-        "format": "{short} {flag}"
+        "format": "{short} {flag}",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -73,8 +74,9 @@
         "format-icons": ["", ""]
     },
     "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} 󰂱",
+        "format": "{volume}% {icon} {format_source} ",
+        "format-bluetooth": "{volume}% {icon} 󰂱 {format_source} ",
+        "format-source": "{volume}% {icon} {format_source}",
         "format-muted": "",
         "format-icons": {
             "headphone": "",
