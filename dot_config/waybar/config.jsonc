@@ -37,7 +37,7 @@
         "sway/window"
     ],
     "modules-center": ["sway/workspaces#icons"],
-    "modules-right": ["tray",
+    "modules-right": [
         "sway/language",
         "battery",
         "pulseaudio",
