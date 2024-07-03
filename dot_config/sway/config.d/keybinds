@@ -4,9 +4,12 @@ set $term foot
 set $menu rofi -show drun
 set $file nautilus
 
+#disable monitor / enable
+bindsym $mod+p output "HDMI-A-2" enable ; output "DP-1" disable
+bindsym $mod+shift+p output "HDMI-A-2" enable ; output "DP-1" enable
+
 # screenshot
 # using https://github.com/Gustash/sway-screenshot
-
 # Screenshot a window
 bindsym $mod+Print exec $HOME/.local/bin/sway-screenshot -m window
 # bindsym $mod+Print exec $HOME/.local/bin/sway-screenshot -m window
@@ -49,7 +52,7 @@ bindsym $mod+Shift+s exec $HOME/.local/bin/sway-screenshot -m region
     bindsym $mod+shift+w exec $HOME/.config/sway/script/wall-launcher.sh
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'What do you want the computer to do?' -B 'Exit sway' 'swaymsg exit' -B 'Restart' 'systemctl restart' -B 'Shutdown' 'systemctl poweroff'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'What do you want the computer to do?' -b 'Exit sway' 'swaymsg exit' -b 'Restart' 'systemctl restart'  
 #
 # Moving around:
 #
@@ -113,7 +116,7 @@ bindsym $mod+Shift+s exec $HOME/.local/bin/sway-screenshot -m region
     bindsym $mod+Shift+f floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+Mod1+f focus mode_toggle
+    # bindsym $mod+Mod1+f focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
