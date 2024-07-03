@@ -1,6 +1,10 @@
 
 dotfile, but sway(fx)
 
+screenshot
+
+https://pixelfed.social/p/beersanp/714180975757995299
+
 use chezmoi for manager dotfile (https://chezmoi.io/)
 
 all keymap use in sway is default key, some shortcut and
@@ -22,6 +26,12 @@ https://github.com/Gustash/sway-screenshot
 
 Gradience
 https://github.com/GradienceTeam/Gradience
+
+pywal16-libadwaita 
+https://github.com/eylles/pywal16-libadwaita
+
+pywal16
+https://github.com/eylles/pywal16
 
 other, i inserted original file in some config as "comment"
 
