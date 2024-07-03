@@ -1,6 +1,6 @@
 # grab from https://gitlab.com/that1communist/dotfiles/-/blob/master/.config/sway/modules/win-rules
 
-hide_edge_borders vertical
+# ide_edge_borders vertical
 mouse_warping none
 default_border pixel 1
 default_floating_border pixel 1
@@ -15,6 +15,7 @@ set {
 	$max inhibit_idle visible; floating enable; sticky enable;
 	$transparent opacity 0.9;
 	$unactive dim_inactive 0.25;
+  $untransparent opacity 1;
 }
 
 for_window [class=".*"] opacity 0.9; $unactive; blur enable
@@ -87,7 +88,7 @@ for_window {
 	[window_type="popup_menu"] $float; shadows enable
 	[window_type="tooltip"] $float; shadows enable
 	[window_type="notification"] $float; shadows enable
-
+  [title="Etterna: (.*)"] $float; $game; 
 #video - inhibit_idle fullscreen; border none; max_render_time off
 	[instance="chromium"] $video
 	[app_id="mpv"] $video

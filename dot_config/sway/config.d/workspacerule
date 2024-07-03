@@ -2,3 +2,6 @@
 
 workspace 1 output HDMI-A-2
 workspace 9 output DP-1
+
+output DP-1 pos 0 0
+output HDMI-A-2 pos 1280 0

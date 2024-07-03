@@ -19,6 +19,7 @@ if [[ -n "$selected_file" ]]; then
   wal -i "$selected_file"
   sway reload
   notify-send "Wallpaper Changed" "Successfully set '$selected_file' as wallpaper"
+  bash $HOME/.config/sway/script/wallpaper-script/apply-theme.sh
 else
   notify-send "Wallpaper Change Cancelled" "No wallpaper selected"
 fi
