@@ -17,9 +17,9 @@ selected_file=$(echo "$wallpapers" | rofi -dmenu -p "Select Wallpaper: ")
 if [[ -n "$selected_file" ]]; then
   # generate wal -> change wallpaper with swaybg
   wal -i "$selected_file"
-  sway reload
-  notify-send "Wallpaper Changed" "Successfully set '$selected_file' as wallpaper"
   bash $HOME/.config/sway/script/wallpaper-script/apply-theme.sh
+  sway reload
+  notify-send "Wallpaper Changed" "Successfully set '$selected_file' as wallpaper\n recheck GTK/QT Theme"
 else
   notify-send "Wallpaper Change Cancelled" "No wallpaper selected"
 fi

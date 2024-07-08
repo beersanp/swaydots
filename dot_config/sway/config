@@ -40,7 +40,7 @@ focus output HDMI-A-2
 for_window [shell="xwayland"] title_format "[XWayland] %title"
 
 # swayfx
-default_border pixel
+default_border none
 shadows disable
 corner_radius 8
 gaps outer 4

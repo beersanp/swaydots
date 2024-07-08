@@ -1,5 +1,7 @@
 @import "mocha.css";
 
+@import "colors-waybar.css";
+
 * {
     border: 0;
     border-radius: 0;
@@ -8,12 +10,13 @@
     min-height: 0;
     /* padding:0px 0px; */
     margin: 1;
-    color: @text;
+    color: @foreground;
 }
 
 window#waybar {
     /* background: @base; */
-    background: rgba(24, 24, 37, 0.75);
+    /* background: rgba(24, 24, 37, 0.75); */
+    background: @background;
     border-radius: 8px 8px;
     /* padding: 0px 0px 0px 0px; */
 }

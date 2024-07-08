@@ -1,5 +1,14 @@
 # grab from https://gitlab.com/that1communist/dotfiles/-/blob/master/.config/sway/modules/win-rules
 
+# title_format <format>
+# Sets the format of window titles. The following placeholders may be used:
+#  %title - The title supplied by the window
+#  %app_id - The wayland app ID (applicable to wayland windows only)
+#  %class - The X11 classname (applicable to xwayland windows only)
+#  %instance - The X11 instance (applicable to xwayland windows only)
+#  %shell - The protocol the window is using (typically xwayland or xdg_shell)
+
+
 # ide_edge_borders vertical
 mouse_warping none
 default_border pixel 1
@@ -88,7 +97,7 @@ for_window {
 	[window_type="popup_menu"] $float; shadows enable
 	[window_type="tooltip"] $float; shadows enable
 	[window_type="notification"] $float; shadows enable
-  [title="Etterna: (.*)"] $float; $game; 
+	[title="Etterna: (.*)"] $float; $game; 
 #video - inhibit_idle fullscreen; border none; max_render_time off
 	[instance="chromium"] $video
 	[app_id="mpv"] $video
@@ -126,4 +135,5 @@ for_window {
 	[title="Wine System Tray"] floating enable; kill
 	[title="Zoom Meeting" app_id="us.zoom.Zoom"] opacity 1;
 	[title="Zoom Meeting" app_id="zoom"] opacity 1;
+	[app_id="waydroid"] $float; blur off;
 }
