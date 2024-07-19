@@ -3,7 +3,7 @@
     "layer": "top",
     "include": "~/.config/waybar/modules",
     "width": 1280,
-    "margin-top": 10,
+    "margin-top": 8,
     "margin-bottom": 0,
     "ipc": true,
     "output": "HDMI-A-2",
@@ -11,7 +11,7 @@
         "mpd",
         "sway/window"
     ],
-    "modules-center": ["sway/workspaces#icons"],
+    "modules-center": ["sway/workspaces"],
     "modules-right": ["tray",
         "sway/language",
         "battery",
@@ -36,7 +36,7 @@
         "mpris",
         "sway/window"
     ],
-    "modules-center": ["sway/workspaces#icons"],
+    "modules-center": ["sway/workspaces"],
     "modules-right": [
         "sway/language",
         "battery",

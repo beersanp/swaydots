@@ -11,7 +11,7 @@ bindsym $mod+shift+p output "HDMI-A-2" enable ; output "DP-1" enable
 # screenshot
 # using https://github.com/Gustash/sway-screenshot
 # Screenshot a window
-bindsym $mod+Print exec $HOME/.local/bin/sway-screenshot -m window
+bindsym $mod+ctrl+Shift+s exec $HOME/.local/bin/sway-screenshot -m window
 # bindsym $mod+Print exec $HOME/.local/bin/sway-screenshot -m window
 # Screenshot a monitor
 bindsym Print exec $HOME/.local/bin/sway-screenshot -m output

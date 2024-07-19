@@ -1,26 +1,29 @@
 {
     "sway/window": {
-    "max-length": 42,
+    "format": "{}",
+    "max-length": 50,
+    "icon": true,
+    "icon-size": 13,
+    "separate-outputs": true,
     "rewrite": {
         "":"🐧 penpentop",
-        "(.*) — Mozilla Firefox": "󰖟 browser",
-        "foot": " terminal",
-        "(.*) - Thorium": "󰖟 browser",
-        "(.*) - Brave": "󰖟 browser",
-        "pacseek": "󰮯 manager",
-        "Software Management - dnfdragora": "󰣛 dnfmanager",
-        "Spotify Premium": " spotify",
-        "Spotify": " spotify",
-        "(.*) - (.*) - Spotify": " spotify",
-        "foot ncmpcpp": "󰎋 music",
-        "(.*) - (.*) - Code - OSS": " code",
-        "(.*) - (.*) - Visual Studio Code": " vscode",
-        "lazygit": " lazygit",
-        "weather": "󰖐 weather",
-        "nvim": " neovim",
-        "btop": " taskmanager"
-    },
-    "separate-outputs": true
+        "(.*) — Mozilla Firefox": "browser",
+        "foot": "terminal",
+        "(.*) - Thorium": "browser",
+        "(.*) - Brave": "browser",
+        "pacseek": "manager",
+        "Software Management - dnfdragora": "dnfmanager",
+        "Spotify Premium": "spotify",
+        "Spotify": "spotify",
+        "(.*) - (.*) - Spotify": "spotify",
+        "(.*) - (.*) - Code - OSS": "code",
+        "(.*) - (.*) - Visual Studio Code": "vscode",
+        "(.*) - (.*) - VSCodium": "code",
+        "lazygit": "lazygit",
+        "weather": "weather",
+        "nvim": "neovim",
+        "btop": "task"
+    }
     },
     "sway/workspaces": {
         "on-click": "activate",
@@ -37,6 +40,7 @@
     },
     "sway/language": {
         "format": "{short} {flag}",
+        "tooltip-format": "{long} {variant}",
         "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
     },
     "battery": {
@@ -71,12 +75,12 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% {icon}",
-        "format-icons": ["", ""]
+        "format-icons": ["","󰃟","󰃞","󰃝","󰃜","󰃛",""]
     },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source} ",
         "format-bluetooth": "{volume}% {icon} 󰂱 {format_source} ",
-        "format-source": "{volume}% {icon} {format_source}",
+        "format-source": "{volume}%",
         "format-muted": "",
         "format-icons": {
             "headphone": "",
@@ -92,8 +96,8 @@
         "ignored-sinks": ["Easy Effects Sink"]
     },
     "mpris": {
-        "format": "{player_icon} ",
-        "format-paused": "{status_icon} ",
+        "format": "{player_icon}",
+        "format-paused": "{status_icon}",
         "tooltip-format": "{dynamic}",
         "dynamic-order": ["title", "artist"],
         "player-icons": {
@@ -113,9 +117,9 @@
         }
     },
     "mpd": {
-        "format": "{stateIcon} mpd",
+        "format": "{stateIcon} ",
         "format-disconnected": "" ,
-        "format-stopped": "stopped ",
+        "format-stopped": "  ",
         "interval": 10,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
@@ -138,20 +142,8 @@
         "on-click-right": "foot ncmpcpp",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
-    "network": {
-        // "interface": "wlan0", // could be set as other, google it
-        "format": "{ifname}",
-        "format-wifi": "{ifname} ",
-        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
-        "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-        "tooltip-format-ethernet": "{ifname} ",
-        "tooltip-format-disconnected": "Disconnected",
-        "max-length": 25
-        },
     "memory": {
-        // "interval": 5,
+        "interval": 1,
         "format": "{percentage}%  ",
         "on-click": "foot -T btop btop"
         },
@@ -161,17 +153,17 @@
         },
     "cpu": {
         "format": "{usage}% 󰍛",
-        // "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        "interval": 1,
         "on-click": "foot -T btop btop"
     },
     "gamemode": {
-        "format": "{glyph}",
-        "format-alt": "{glyph} {count} ",
-        "glyph": "",
+        "format": "{glyph} {count}",
+        "format-alt": "{glyph}",
+        "glyph": "󰸼",
         "hide-not-running": true,
         "use-icon": true,
-        "icon-name": "",
-        "icon-spacing": 4,
+        "icon-name": "󰸼",
+        "icon-spacing": 0,
         "icon-size": 14,
         "tooltip": true,
         "tooltip-format": "Games running: {count}"

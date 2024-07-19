@@ -1,0 +1,16 @@
+[Default Applications]
+image/jpeg=imv-dir.desktop
+application/x-bittorrent=org.qbittorrent.qBittorrent.desktop
+x-scheme-handler/discord-378543094531883009=discord-378543094531883009.desktop
+image/png=imv-dir.desktop
+application/pdf=org.mozilla.firefox.desktop
+application/x-osu-skin-archive=sh.ppy.osu.desktop
+application/x-ms-dos-executable=com.usebottles.bottles.desktop
+
+[Added Associations]
+image/jpeg=imv-dir.desktop;
+application/x-bittorrent=org.qbittorrent.qBittorrent.desktop;
+image/png=imv-dir.desktop;
+application/pdf=org.pwmt.zathura.desktop;org.mozilla.firefox.desktop;
+application/x-osu-skin-archive=sh.ppy.osu.desktop;
+application/x-ms-dos-executable=com.usebottles.bottles.desktop;
