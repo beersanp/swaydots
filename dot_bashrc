@@ -5,8 +5,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+
+#allias
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias gitcom='git commit'
+alias gitpush='git push'
+
 PS1='[\u@\h \W]\$ '
 
 # starship
@@ -32,3 +37,4 @@ cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
+export PATH=$PATH:/home/beersanp/.spicetify
