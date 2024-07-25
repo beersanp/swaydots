@@ -2,13 +2,14 @@
   {
     "bindings": {
       "ctrl-shift-[": "pane::ActivatePrevItem",
-      "ctrl-shift-]": "pane::ActivateNextItem",
-      "ctrl-shift-q": "zed::Quit"
+      "ctrl-shift-]": "pane::ActivateNextItem"
     }
   },
   {
     "context": "Editor",
     "bindings": {
+      "shift-alt-up": "editor::AddSelectionAbove", // Insert Cursor Above
+      "shift-alt-down": "editor::AddSelectionBelow", // Insert Cursor Below
       "ctrl->": "zed::IncreaseBufferFontSize",
       "ctrl-<": "zed::DecreaseBufferFontSize",
       "ctrl-shift-j": "editor::JoinLines",
@@ -28,8 +29,8 @@
       "ctrl-/": ["editor::ToggleComments", { "advance_downwards": true }],
       "alt-up": "editor::SelectLargerSyntaxNode",
       "alt-down": "editor::SelectSmallerSyntaxNode",
-      "shift-alt-up": "editor::MoveLineUp",
-      "shift-alt-down": "editor::MoveLineDown",
+      "ctrl-shift-up": "editor::MoveLineUp",
+      "ctrl-shift-down": "editor::MoveLineDown",
       "ctrl-alt-l": "editor::Format",
       "shift-f6": "editor::Rename",
       "ctrl-alt-left": "pane::GoBack",
