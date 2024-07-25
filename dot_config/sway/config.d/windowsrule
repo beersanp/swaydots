@@ -61,13 +61,18 @@ for_window {
 	[app_id="ksysguard"] $popup
 	[app_id="net.nokyan.Resources"] $popup
 	[app_id="galculator"] $popup
+
+
+	[app_id="gnome-calculator"] $popup
+	[title="Calculator"] $popup
 	[title="(?:Open|Save) (?:File|Folder|As)" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt"] $popup
 	[title="^(File|Folder)\s*Already Exists\s*—\s*" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt"] $popup
-	[title="Confirm to replace files" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt"] $popup
+	[title="Confirm to replace files" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt|nautilus"] $popup
 	[app_id="pavucontrol"] $popup
 	[app_id="rofi"] $popup
 	[app_id="qtalarm"] $popup
 	[app_id="deluge" title="Add Torrents*"] $popup
+
 
 #float - floating enable; border pixel 1
 	[app_id="org.telegram.desktop"] $float; blur off; shadows disable; inhibit_idle open
@@ -97,7 +102,7 @@ for_window {
 	[window_type="popup_menu"] $float; shadows enable
 	[window_type="tooltip"] $float; shadows enable
 	[window_type="notification"] $float; shadows enable
-	[title="Etterna: (.*)"] $float; $game; 
+	[title="Etterna: (.*)"] $float; $game;
 #video - inhibit_idle fullscreen; border none; max_render_time off
 	[instance="chromium"] $video
 	[app_id="mpv"] $video

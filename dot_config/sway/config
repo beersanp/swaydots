@@ -13,9 +13,9 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 exec /usr/libexec/xdg-desktop-portal -r & /usr/libexec/xdg-desktop-portal-wlr
 
 exec mpd ~/.config/mpd/mpd.conf
-exec ~/.cargo/bin/mpd-discord-rpc
-exec nm-applet --indicator #pulseaudio-tray
-exec blueman-applet #bluetooth-tray
+exec $HOME/.cargo/bin/mpd-discord-rpc
+exec nm-applet --indicator
+exec blueman-applet
 exec kdeconnectd & kdeconnect-indicator #kde-connect
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
