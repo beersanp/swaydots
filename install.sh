@@ -27,7 +27,7 @@ sleep 3
 clear
 
 echo "install sway"
-sudo dnf install -y swayfx waybar rofi btop kvantum NetworkManager foot kde-connect neovim flatpak jq grim slurp wl-clipboard libnotify ImageMagick mpd mpv nautilus python-pip ncmpcpp nerd-fonts jetbrains-mono-fonts gnome-keyring --allowerasing
+sudo dnf install -y swayfx waybar gnome-keyring  rofi btop kvantum NetworkManager foot kde-connect neovim flatpak jq grim slurp wl-clipboard libnotify ImageMagick mpd mpv nautilus python-pip ncmpcpp nerd-fonts jetbrains-mono-fonts gnome-keyring --allowerasing
 sleep 2
 echo "install starship"
 

@@ -17,6 +17,7 @@ exec $HOME/.cargo/bin/mpd-discord-rpc
 exec nm-applet --indicator
 exec blueman-applet
 exec kdeconnectd & kdeconnect-indicator #kde-connect
+exec gnome-keyring -s
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
