@@ -65,6 +65,7 @@ for_window {
 
 	[app_id="gnome-calculator"] $popup
 	[title="Calculator"] $popup
+	[title="Gitnuro"] $popup
 	[title="(?:Open|Save) (?:File|Folder|As)" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt|nautilus"] $popup
 	[title="^(File|Folder)\s*Already Exists\s*—\s*" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt|nautilus"] $popup
 	[title="Confirm to replace files" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt|nautilus"] $popup
