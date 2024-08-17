@@ -32,6 +32,10 @@ bindsym $mod+Shift+s exec $HOME/.local/bin/sway-screenshot -m region
     # Start your launcher
     bindsym $mod+d exec $menu
 
+
+    # Start emoji picker
+    bindsym $mod+shift+d exec rofimoji
+
     # Start File Manager
     bindsym $mod+t exec $file
 
@@ -52,7 +56,7 @@ bindsym $mod+Shift+s exec $HOME/.local/bin/sway-screenshot -m region
     bindsym $mod+shift+w exec $HOME/.config/sway/script/wall-launcher.sh
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'What do you want the computer to do?' -b 'Exit sway' 'swaymsg exit' -b 'Restart' 'systemctl restart'  
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'What do you want the computer to do?' -b 'Exit sway' 'swaymsg exit' -b 'Restart' 'systemctl restart'
 #
 # Moving around:
 #
@@ -140,7 +144,7 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    
+
     bindsym Right resize shrink width 10px
     bindsym Down resize grow height 10px
     bindsym Up resize shrink height 10px

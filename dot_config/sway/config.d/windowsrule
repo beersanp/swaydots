@@ -39,12 +39,13 @@ for_window {
 	[class="yuzu"] $ii
 	[app_id="snes9x-gtk"] $ii
 
-#game - inhibit_idle focus; floating enable; border none; fullscreen enable
+#game - inhibit_idle focus; floating enable; border none;
 	[instance="origin.exe"] $game
 	[instance="gamescope"] $game
 	[class="dolphin-emu" title="Dolphin (.*) \| (.*) \| (.*) \| (.*)"] $game
 	[class="sm64ex"] $game
 	[class="gamescope"] $game
+	[class="osu!"] $game
 	[class="steam_app.*"] $game
 	[instance="steam_app.*"] $game
 	[class="LLBlaze.x86_64"] $game
@@ -65,6 +66,7 @@ for_window {
 
 	[app_id="gnome-calculator"] $popup
 	[title="Calculator"] $popup
+	[title="Valuta"] $popup
 	[title="Gitnuro"] $popup
 	[title="(?:Open|Save) (?:File|Folder|As)" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt|nautilus"] $popup
 	[title="^(File|Folder)\s*Already Exists\s*—\s*" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt|nautilus"] $popup
