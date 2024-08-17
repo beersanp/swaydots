@@ -38,3 +38,5 @@ cat ~/.cache/wal/sequences
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
 export PATH=$PATH:/home/beersanp/.spicetify
+export PATH="$HOME/.basher/bin:$PATH"   ##basher5ea843
+eval "$(basher init - bash)"             ##basher5ea843
