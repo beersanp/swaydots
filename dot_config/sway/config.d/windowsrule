@@ -42,6 +42,7 @@ for_window {
 #game - inhibit_idle focus; floating enable; border none;
 	[instance="origin.exe"] $game
 	[instance="gamescope"] $game
+	[instance="Etterna"] $game
 	[class="dolphin-emu" title="Dolphin (.*) \| (.*) \| (.*) \| (.*)"] $game
 	[class="sm64ex"] $game
 	[class="gamescope"] $game

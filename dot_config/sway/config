@@ -5,6 +5,14 @@ exec mako
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec udiskie &
 exec wal -R
+
+# app-with-tray
+exec $HOME/.config/sway/script/start-app-with-tray.sh
+
+# wlsunset
+exec wlsunset -l 13.73 -L 100.52 -t 5000
+# qbittorrent
+# exec flatpak run org.qbittorrent.qBittorrent
 # exec swww query || swww init
 exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
