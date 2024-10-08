@@ -1,5 +1,5 @@
 [
-{
+  {
     "layer": "top",
     "include": "~/.config/waybar/modules",
     "width": 1280,
@@ -7,48 +7,21 @@
     "margin-bottom": 0,
     "ipc": true,
     "output": "HDMI-A-2",
-    "modules-left": [
-        "mpd",
-        "sway/window"
-    ],
-    "modules-center": ["sway/workspaces"],
-    "modules-right": ["tray",
-        "sway/language",
-        "battery",
-        "pulseaudio",
-        "backlight",
-        "cpu",
-        "memory",
-        "custom/weather",
-        "clock",
-        "privacy",
-        "gamemode"]
-},
-{
-    "layer": "top",
-    "include": "~/.config/waybar/modules",
-    "output": "DP-1",
-    "ipc": true,
-    "margin-top": 8,
-    "margin-bottom": 0,
-    "width": 900,
-    "modules-left": [
-        "mpris",
-        "sway/window"
-    ],
+    "modules-left": ["sway/window"],
     "modules-center": ["sway/workspaces"],
     "modules-right": [
-        "sway/language",
-        "battery",
-        "pulseaudio",
-        "backlight",
-        "cpu",
-        "memory",
-        "custom/weather",
-        "clock",
-        "privacy"]
-},
-{
+      "tray",
+      "sway/language",
+      "battery",
+      "pulseaudio",
+      "backlight",
+      "custom/weather",
+      "clock",
+      "privacy",
+      "gamemode"
+    ]
+  },
+  {
     "layer": "top",
     "width": 1200,
     "margin-top": 8,
@@ -56,21 +29,37 @@
     "ipc": true,
     "include": "~/.config/waybar/modules",
     "output": "eDP-1",
-    "modules-left": [
-        "mpris",
-        "sway/window"
-    ],
+    "modules-left": ["mpris", "sway/window"],
     "modules-center": ["sway/workspaces#icons"],
-    "modules-right": ["tray",
-        "sway/language",
-        "battery",
-        "pulseaudio",
-        "backlight",
-        "cpu",
-        "memory",
-        "custom/weather",
-        "clock",
-        "privacy",
-        "gamemode"]
-}
+    "modules-right": [
+      "tray",
+      "sway/language",
+      "battery",
+      "pulseaudio",
+      "backlight",
+      "cpu",
+      "memory",
+      "custom/weather",
+      "clock",
+      "privacy",
+      "gamemode"
+    ]
+  },
+  {
+    "layer": "top",
+    "include": "~/.config/waybar/modules",
+    "width": 900,
+    "margin-top": 8,
+    "margin-bottom": 0,
+    "ipc": true,
+    "output": "DP-3",
+    "modules-left": ["sway/window"],
+    "modules-center": ["sway/workspaces"],
+    "modules-right": [
+      "sway/language",
+      "battery",
+      "pulseaudio",
+      "clock"
+    ]
+  }
 ]

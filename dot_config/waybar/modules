@@ -6,7 +6,7 @@
     "icon-size": 13,
     "separate-outputs": true,
     "rewrite": {
-        "":"🐧 penpentop",
+        "":"penpentop",
         "(.*) — Mozilla Firefox": "browser",
         "foot": "terminal",
         "(.*) - Thorium": "browser",
@@ -78,8 +78,8 @@
         "format-icons": ["","󰃟","󰃞","󰃝","󰃜","󰃛",""]
     },
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source} ",
-        "format-bluetooth": "{volume}% {icon} 󰂱 {format_source} ",
+        "format": "vol:{volume}% mic:{format_source}",
+        "format-bluetooth": "bluevol:{volume}% mic:{format_source}",
         "format-source": "{volume}%",
         "format-muted": "",
         "format-icons": {
@@ -119,7 +119,7 @@
     "mpd": {
         "format": "{stateIcon} ",
         "format-disconnected": "" ,
-        "format-stopped": "  ",
+        "format-stopped": "",
         "interval": 10,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
@@ -144,7 +144,7 @@
     },
     "memory": {
         "interval": 1,
-        "format": "{percentage}%  ",
+        "format": "mem:{percentage}%",
         "on-click": "foot -T btop btop"
         },
     "tray": {
@@ -152,12 +152,12 @@
         "spacing": 5
         },
     "cpu": {
-        "format": "{usage}% 󰍛",
+        "format": "cpu:{usage}%",
         "interval": 1,
         "on-click": "foot -T btop btop"
     },
     "gamemode": {
-        "format": "{glyph} {count}",
+        "format": "{glyph}",
         "format-alt": "{glyph}",
         "glyph": "󰸼",
         "hide-not-running": true,
@@ -209,40 +209,6 @@
             "locked": "",
             "unlocked": ""
         }
-    },
-    "group/group-power": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 500,
-            "children-class": "not-power",
-            "transition-left-to-right": false
-        },
-        "modules": [
-            "custom/quit",
-            "custom/power",
-            "custom/lock",
-            "custom/reboot"
-        ]
-    },
-    "custom/quit": {
-        "format": "󰗼",
-        "tooltip": false,
-        "on-click": "hyprctl dispatch exit"
-    },
-    "custom/lock": {
-        "format": "󰍁",
-        "tooltip": false,
-        "on-click": ""
-    },
-    "custom/reboot": {
-        "format": "󰜉",
-        "tooltip": false,
-        "on-click": "reboot"
-    },
-    "custom/power": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "shutdown now"
     },
     "custom/cloudflarewarp":{
         "format": "{}",
