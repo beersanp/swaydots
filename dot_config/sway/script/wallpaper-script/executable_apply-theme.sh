@@ -2,7 +2,7 @@
 
 myname="${0##*/}"
 
-gradience_dir="${HOME}/.config/presets/user"
+# gradience_dir="${HOME}/.config/presets/user"
 kvantum_dir="${HOME}/.config/Kvantum"
 
 wal_template_dir="${HOME}/.cache/wal"
@@ -50,9 +50,9 @@ esac done
 
 
 # copy gradience theme
-if [ ! -L "${gradience_dir}/${theme}.json" ]; then
-  ln -s "$wal_template_dir/${template}.json" "${gradience_dir}/${theme}.json"
-fi
+# if [ ! -L "${gradience_dir}/${theme}.json" ]; then
+#   ln -s "$wal_template_dir/${template}.json" "${gradience_dir}/${theme}.json"
+# fi
 
 # kvantum theme dir
 kvtheme_dir="$kvantum_dir/${theme}"
@@ -70,6 +70,6 @@ fi
 
 # do we actually set the themes?
 if [ "$settheme" -eq 1 ]; then
-  gradience-cli apply -n "$theme" --gtk both
+  # gradience-cli apply -n "$theme" --gtk both
   kvantummanager --set "$theme"
 fi
